@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <section class=" py-20 bg-slate-50">
+        <div class="inner max-w-6xl mx-auto h-auto">
+            <h2 class="text-center text-5xl">Shooping Cart</h2>
+            <div class="cart-box mt-20 ">
+
+                <!-- Item - Iphone -->
+                <div class="relative">
+                    <a id="phone-item-close" class="text-2xl  absolute z-20 top-2 right-4"><i
+                        class="fa-solid fa-xmark"></i></a>
+                    <div
+                    class="item-box-phone ease-in-out duration-500 z-10  bg-slate-200 rounded-xl flex justify-left items-center gap-8">
+                    <img class="w-1/6 closing-attempt" src="./images/product-1.png" alt="">
+                    <div class="item-description w-3/6 closing-attempt">
+                        <h3 class="text-2xl">iPhone 11 128GB Black</h3>
+                        <p class="pr-24">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi saepe velit
+                            quibusdam tempore autem laborum quod reiciendis labore.</p>
+                    </div>
+                    <div class="btn-container w-1/6 closing-attempt">
+                        <a class="phone-btn-minus bg-slate-50 py-px px-2 border-2 border-slate-500 rounded"><i
+                                class="fa-solid fa-minus" style="color: rgb(100 116 139)"></i></a>
+                        <input id="phone-number" type="number" value="1" min="1"
+                            class="w-14 pl-2 rounded border-2 border-slate-500 py-0">
+                        <a class="phone-btn-plus bg-slate-50 py-px px-2 border-2 border-slate-500 rounded"><i
+                                class="fa-solid fa-plus" style="color: rgb(100 116 139)"></i></a>
+                    </div>
+                    <h3 class="text-2xl w-1/6 closing-attempt">$<span class="phone-price text-2xl">1200</span> </h3>
+                    
+                </div>
+                </div>
+
+                <!-- Item - PhoneCase -->
+                <div class="relative">
+                    <a id="case-item-close" class="text-2xl absolute top-2 right-4 z-20"><i
+                        class="fa-solid fa-xmark"></i></a>
+                    <div
+                    class="item-box-case ease-in-out duration-500 mt-6 bg-slate-200 z-10 rounded-xl flex justify-left items-center gap-8">
+                    <img class="w-1/6 closing-attempt" src="./images/product-2.png" alt="">
+                    <div class="item-description w-3/6 closing-attempt">
+                        <h3 class="text-2xl">iPhone 11 Silicone Case - Black</h3>
+                        <p class="pr-24">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi saepe velit
+                            quibusdam tempore autem laborum quod reiciendis labore.</p>
+                    </div>
+                    <div class="btn-container w-1/6 closing-attempt">
+                        <a class="case-btn-minus bg-slate-50 py-px px-2 border-2 border-slate-500 rounded"><i
+                                class="fa-solid fa-minus" style="color: rgb(100 116 139)"></i></a>
+                        <input id="case-number" type="number" value="1" min="1"
+                            class="w-14 pl-2 rounded border-2 border-slate-500 py-0">
+                        <a class="case-btn-plus bg-slate-50 py-px px-2 border-2 border-slate-500 rounded"><i
+                                class="fa-solid fa-plus" style="color: rgb(100 116 139)"></i></a>
+                    </div>
+                    <h3 class="text-2xl w-1/6 closing-attempt">$<span class="case-price text-2xl">59</span> </h3>
+                    
+                </div>
+                </div>
+
+
+                <!-- Experimental -->
+                <div class="relative mt-6">
+                    <a id="ex-item-close" class="text-2xl  absolute top-2 right-4 z-20"><i
+                        class="fa-solid fa-xmark"></i></a>
+                    <div
+                        class="item-box-ex ease-in-out duration-500  bg-slate-200 rounded-xl flex justify-left items-center gap-8 z-10">
+                        <img class="w-1/6 closing-attempt" src="./images/product-3.png" alt="">
+                        <div class="item-description w-3/6 closing-attempt">
+                            <h3 class="text-2xl">Apple Watch Ultra</h3>
+                            <p class="pr-24">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi saepe velit
+                                quibusdam tempore autem laborum quod reiciendis labore.</p>
+                        </div>
+                        <div class="btn-container w-1/6 closing-attempt">
+                            <a class="ex-btn-minus bg-slate-50 py-px px-2 border-2 border-slate-500 rounded"><i
+                                    class="fa-solid fa-minus" style="color: rgb(100 116 139)"></i></a>
+                            <input id="ex-number" type="number" value="1" min="1"
+                                class="w-14 pl-2 rounded border-2 border-slate-500 py-0">
+                            <a class="ex-btn-plus bg-slate-50 py-px px-2 border-2 border-slate-500 rounded"><i
+                                    class="fa-solid fa-plus" style="color: rgb(100 116 139)"></i></a>
+                        </div>
+                        <h3 class="text-2xl w-1/6 closing-attempt">$<span class="ex-price text-2xl">799</span> </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+<script src="script.js"></script>
+<script src="close.js"></script>
+
+</html>
